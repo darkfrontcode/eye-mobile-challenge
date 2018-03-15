@@ -1,6 +1,5 @@
 import * as path from 'path'
 import * as webpack from 'webpack'
-import * as copy from 'copy-webpack-plugin'
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default new Object({
@@ -17,8 +16,8 @@ export default new Object({
 
 	resolve: {
 
-		extensions: ['.js', '.ts', '.pug', '.styl']
-
+		extensions: ['.js', '.ts', '.pug', '.styl'],
+		
 	},
 
 	module: {
@@ -27,6 +26,10 @@ export default new Object({
 
 		rules: [
 
+			{
+				test: /\.ts$/,
+				use: 'awesome-typescript-loader'
+			},
 			{
 				test: /\.styl$/,
 				use: [
@@ -65,13 +68,6 @@ export default new Object({
 			filename: 'index.html',
 			inject: true
 		}),
-
-		new copy([
-			{
-				from: path.join(__dirname, './source/assets'),
-				to: path.join(__dirname, './build/assets')
-			}
-		]),
 
 	],
 

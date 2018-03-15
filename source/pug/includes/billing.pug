@@ -11,10 +11,10 @@ section(id="billing")
                 a.heading-03 outro período
 
     section(id="balance")
-        .legend
+        hgroup
             h5.active
                 .icon-wrapper
-                    +icon('#ic-clientes')
+                    +icon('#ic-totais')
                 span.heading-04 Totais
 
             h5
@@ -28,3 +28,7 @@ section(id="billing")
             .value
                 p.heading-05 valor total
                 p.heading-06 10.178,60
+
+    section(id="graphics")
+        .donut
+            canvas(id="pie")
