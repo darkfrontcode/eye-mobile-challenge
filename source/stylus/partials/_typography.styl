@@ -1,0 +1,70 @@
+/* ==========================================================================
+   -- Typography
+   ========================================================================== */
+/* ==========================================================================
+   -- Mixins
+   ========================================================================== */
+
+heading-01()
+    font-family $font-01
+    color $gossamer
+    font-size 12px
+
+heading-02()
+    font-family $font-02
+    color $storm_gray
+    font-size 16px
+    font-weight normal
+    text-transform uppercase
+
+heading-03()
+    heading-02()
+    color white
+    font-size 15px
+
+heading-04()
+    font-family $font-01
+    color $french_gray
+    text-transform uppercase
+
+heading-05()
+    heading-02()
+    font-size 26px
+
+heading-06()
+    font-family $font-01
+    color $caribbean_green
+    font-size 68px
+    font-weight bold
+    letter-spacing 2px
+
+heading-07()
+    font-family $font-01
+    color $caribbean_green
+    font-size 36px
+    font-weight bold
+
+/* ==========================================================================
+   -- Classes
+   ========================================================================== */
+
+.heading-01
+    heading-01()
+
+.heading-02
+    heading-02()
+
+.heading-03
+    heading-03()
+
+.heading-04
+    heading-04()
+
+.heading-05
+    heading-05()
+
+.heading-06
+    heading-06()
+
+.heading-07
+    heading-07()

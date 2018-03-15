@@ -1,0 +1,25 @@
+/* ==========================================================================
+   -- Main Nav
+   ========================================================================== */
+
+#main-nav
+    display flex
+    flex-grow 0
+    height 80px
+    border-bottom 1px solid $iron
+    padding 0 40px
+
+    > ul
+        display flex
+        align-items center
+
+        > li
+
+            &:after
+                content '|'
+                padding 0 30px
+
+            &:nth-last-of-type(1)
+                &:after
+                    content ''
+                    padding 0

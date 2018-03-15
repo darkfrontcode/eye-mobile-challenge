@@ -1,0 +1,16 @@
+include ../mixins/icon-base
+include ../mixins/icon
+
+aside(id="main-aside")
+    #logo
+        +icon('#ic-logo')
+    ul
+        li.active
+            +icon('#ic-dashboard')
+            span.heading-01(class="text")
+                | Meu
+                br
+                | Faturamento
+        li 
+            +icon('#ic-cadastro')
+            span.heading-01(class="text") Cadastro
