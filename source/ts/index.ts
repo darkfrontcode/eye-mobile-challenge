@@ -1,18 +1,19 @@
 import '../stylus/main.styl'
 
 const Chart = window['Chart']
-const ctx = document.getElementById('pie')
+const ctx = document.getElementById('doughnut')
 
 new Chart(ctx, {
-    type: 'pie',
+    type: 'doughnut',
     data: {
-        labels: ['Banho & Tosa', 'Consultas', 'Medicamentos'],
         datasets: [{ 
-            data: [10, 20, 30], 
+            data: [50, 30, 20], 
             backgroundColor: ['#cd29d5', '#792ad5', '#3a86fe']
         }]
     },
     options: {
+        cutoutPercentage: 70,
+        rotation: 55,
         responsive: true,
         maintainAspectRatio: true
     }
