@@ -1,20 +1,6 @@
+import { Chart } from './chart/chart'
+import * as Schema from './schemas'
 import '../stylus/main.styl'
 
-const Chart = window['Chart']
-const ctx = document.getElementById('doughnut')
-
-new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        datasets: [{ 
-            data: [50, 30, 20], 
-            backgroundColor: ['#cd29d5', '#792ad5', '#3a86fe']
-        }]
-    },
-    options: {
-        cutoutPercentage: 70,
-        rotation: 55,
-        responsive: true,
-        maintainAspectRatio: true
-    }
-})
+new Chart(document.getElementById('doughnut'), Schema.Doughnut)
+new Chart(document.getElementById('board'), Schema.Board)

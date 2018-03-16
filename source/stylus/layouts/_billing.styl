@@ -7,99 +7,172 @@
     box-sizing border-box
     overflow-y auto
 
-    > #date-tags
+#date-tags
+    display flex
+    flex-grow 1
+    margin-bottom 28px
+
+    > ul
         display flex
-        flex-grow 1
-        margin-bottom 28px
 
-        > ul
-            display flex
+        > li
+            box-sizing border-box
+            border-radius 18px
+            padding 9px 26px
+            background $caribbean_green
+            margin-right 12px
 
-            > li
-                box-sizing border-box
-                border-radius 18px
-                padding 9px 26px
-                background $caribbean_green
-                margin-right 12px
+#balance
+    display flex
+    justify-content center
+    position relative
+    margin-bottom 32px
 
-    > #balance
+    > .total
         display flex
         justify-content center
-        position relative
-        margin-bottom 32px
+        width 50%
+        height 144px
+        border-bottom 1px solid $iron
 
-        > .total
+        > .price-tag
+            > p
+                margin-top 32px
+
+        > .value
             display flex
-            justify-content center
-            width 50%
-            height 144px
-            border-bottom 1px solid $iron
+            flex-direction column
+            align-items center
 
-            > .price-tag
-                > p
-                    margin-top 32px
+    > hgroup
+        position absolute
+        left 0
 
-            > .value
-                display flex
-                flex-direction column
-                align-items center
+        > h5
+            display flex
+            align-items center
+            
+            > .icon-wrapper
+                width 28px
+                height 28px
+                margin-right 10px
 
-        > hgroup
-            position absolute
-            left 0
-
-            > h5
-                display flex
-                align-items center
-                
-                > .icon-wrapper
+                > svg
                     width 28px
                     height 28px
-                    margin-right 10px
+                    fill $french_gray
 
+            &:nth-of-type(1)
+                margin-bottom 28px
+
+            &.active
+                > span
+                    color $storm_gray
+
+                > .icon-wrapper
                     > svg
-                        width 28px
-                        height 28px
-                        fill $french_gray
+                        fill $storm_gray
+#graphics
+    display flex
+    justify-content center
 
-                &:nth-of-type(1)
-                    margin-bottom 28px
-
-                &.active
-                    > span
-                        color $storm_gray
-
-                    > .icon-wrapper
-                        > svg
-                            fill $storm_gray
-    > #graphics
+    > .center-block
         display flex
-        justify-content center
+        justify-content space-around
+        width 100%
 
-        > .center-block
+        > .services
+        > .status
             display flex
-            justify-content center
-            width 50%
+            flex-direction column
+            align-items center
+            width 25%
 
-            > .services
-            > .status
+            > .content
+                > ul
+                    width 100%
+
+                    > li
+                        display flex
+                        align-items center
+                        justify-content center
+                        margin-bottom 34px
+                        
+                        > .marker
+                            display flex
+                            justify-content flex-start
+                            align-items center
+                            width 50%
+
+                            > .circle
+                                width 20px
+                                height @width
+                                border-radius 10px
+                                margin-right 7px
+                            > h6
+                                margin-top 2px
+
+                        > .value
+                            display flex
+                            justify-content flex-end
+                            width 50%
+
+        > .services
+            > .content
                 display flex
                 flex-direction column
                 align-items center
-                width 50%
+                width 90%
 
-            > .services
-                > .content
+                > h3
+                    margin-bottom 20px
+
+                > .doughnut
                     display flex
-                    flex-direction column
-                    align-items center
-                    width 90%
+                    justify-content center
+                    width 134px
+                    height @width
+                    margin-bottom 20px
 
-                    > .doughnut
-                        display flex
-                        justify-content center
-                        width 100%
-                    
-                    > ul
-                        > li
-                            display flex
+                > ul
+                    > li:nth-of-type(1)
+                        > .marker
+                            > .circle
+                                background $cornflower_blue
+
+                    > li:nth-of-type(2)
+                        > .marker
+                            > .circle
+                                background $purple_heart
+
+                    > li:nth-of-type(3)
+                        > .marker
+                            > .circle
+                                background $dodger_blue
+
+        > .status
+            > .content
+                display flex
+                flex-direction column
+                align-items center
+                width 90%
+
+                > h3
+                    margin-bottom 40px
+
+                > .board
+                    display flex
+                    justify-content center
+                    width 282px
+                    height 200px
+
+                > ul
+                    > li:nth-of-type(1)
+                        > .marker
+                            > .circle
+                                background $caribbean_green
+
+                    > li:nth-of-type(2)
+                        > .marker
+                            > .circle
+                                background $wild_watermelon

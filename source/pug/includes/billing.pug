@@ -35,25 +35,47 @@ section(id="billing")
                 .content
                     h3.heading-05 Serviços
                     .doughnut
-                        canvas(id="doughnut")
+                        canvas(id="doughnut", width="100%", height="100%")
                     ul
                         li
                             .marker
-                                //- icone
+                                .circle
                                 h6.heading-08 Banho & Tosa
                             .value
                                 span.heading-09 R$ 6.445,25 (50%)
                         li
                             .marker
-                                //- icone
+                                .circle
                                 h6.heading-08 Consultas
                             .value
                                 span.heading-09 R$ 3.867,15 (30%)
                         li
                             .marker
-                                //- icone
+                                .circle
                                 h6.heading-08 Medicamentos
                             .value
                                 span.heading-09 R$ 2.578,10 (20%)
+                        li
+                            .marker
+                                h6.heading-10 Total
+                            .value
+                                h6.heading-09 R$ 12.890,50 (100%)
             .status
-                h3.heading-05 Despesas x receitas
+                .content
+                    h3.heading-05 Despesas x receitas
+                    .board
+                        canvas(id="board", width="100%", height="100%")
+                    ul
+                        li
+                            .marker
+                                .circle
+                                h6.heading-08 Receitas
+                            .value
+                                span.heading-09 R$ 12,890.50 (50%)
+
+                        li
+                            .marker
+                                .circle
+                                h6.heading-08 Despesas
+                            .value
+                                span.heading-09 R$ 2.711,90 (30%)
