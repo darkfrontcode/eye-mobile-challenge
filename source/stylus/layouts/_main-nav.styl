@@ -9,6 +9,25 @@
     border-bottom 1px solid $iron
     padding 0 40px
 
+    @media screen and (max-width: $phone)
+        padding 0 15px
+
+    > .menu
+        width 30px
+        height @width
+        display none
+        align-items center
+        min-height 100%
+        margin-right 15px
+
+        @media screen and (max-width: $phone)
+            display flex
+
+        svg
+            width @width
+            height @width
+            fill $storm_gray
+
     > ul
         display flex
         align-items center

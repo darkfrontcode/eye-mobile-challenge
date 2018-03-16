@@ -28,6 +28,10 @@
     position relative
     margin-bottom 32px
 
+    @media screen and (max-width: $phone)
+        display flex
+        flex-direction column
+
     > .total
         display flex
         justify-content center
@@ -35,18 +39,31 @@
         height 144px
         border-bottom 1px solid $iron
 
+        @media screen and (max-width: $phone)
+            width 100%
+
         > .price-tag
             > p
                 margin-top 32px
+                margin-right 10px
 
         > .value
             display flex
             flex-direction column
             align-items center
 
+            @media screen and (max-width: $phone)
+                font-size 60px
+
     > hgroup
         position absolute
         left 0
+
+        @media screen and (max-width: $phone)
+            display flex
+            position relative
+            left initial
+            margin-bottom 70px
 
         > h5
             display flex
@@ -64,6 +81,10 @@
 
             &:nth-of-type(1)
                 margin-bottom 28px
+
+                @media screen and (max-width: $phone)
+                    margin-right 30px
+                    margin-bottom 0
 
             &.active
                 > span

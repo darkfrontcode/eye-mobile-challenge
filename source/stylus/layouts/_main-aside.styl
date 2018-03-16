@@ -5,9 +5,12 @@
 #main-aside
     display flex
     flex-direction column
+    background $caribbean_green
     flex-shrink 0
     width 110px
-    background $caribbean_green
+
+    @media screen and (max-width: $phone)
+        display none
 
     > #logo
         display flex
