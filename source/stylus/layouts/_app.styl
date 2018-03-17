@@ -2,6 +2,38 @@
    -- App
    ========================================================================== */
 
+@keyframes hide
+    from
+        opacity 1
+
+    to
+        opacity 0
+
+@keyframes place
+    from
+        z-index 1
+
+    to
+        z-index -1
+
+#loader
+    min-height 100%
+    min-width 100%
+    justify-content center
+    position fixed
+    background $caribbean_green
+    z-index 10
+    animation hide 1s ease .75s forwards, place 0s linear 1.75s forwards
+
+    svg
+        width 10%
+        height @width
+        fill white
+
+        @media screen and (max-width: $phone)
+            width 30%
+            height @width
+
 #app
     min-height 100%
 
