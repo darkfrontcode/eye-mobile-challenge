@@ -1,8 +1,10 @@
-nav(id="main-nav")
-    .menu
+- var breadcrumbs = htmlWebpackPlugin.options.data.breadcrumbs
+
+nav#main-nav(grow="false", row)
+    .menu(align="middle")
         +icon('#ic-menu')
-    ul
-        li
-            a.heading-02 Petshop
-        li
-            a.heading-02 Meu faturamento
+        
+    ul(align="middle", row)
+        each bread in breadcrumbs
+            li
+                a= bread

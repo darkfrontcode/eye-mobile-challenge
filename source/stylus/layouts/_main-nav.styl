@@ -3,8 +3,6 @@
    ========================================================================== */
 
 #main-nav
-    display flex
-    flex-grow 0
     height 80px
     border-bottom 1px solid $iron
     padding 0 40px
@@ -16,7 +14,6 @@
         width 30px
         height @width
         display none
-        align-items center
         min-height 100%
         margin-right 15px
 
@@ -29,11 +26,9 @@
             fill $storm_gray
 
     > ul
-        display flex
-        align-items center
-
         > li
-
+            heading-02()
+            
             &:after
                 content '|'
                 padding 0 30px

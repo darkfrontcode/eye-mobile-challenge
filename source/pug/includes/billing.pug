@@ -1,81 +1,57 @@
-section(id="billing")
-    nav(id="date-tags")
-        ul
-            li.active
-                a.heading-03 hoje
-            li
-                a.heading-03 última semana
-            li
-                a.heading-03 último mês
-            li
-                a.heading-03 outro período
+-
+    var dateTags = htmlWebpackPlugin.options.data.dateTags
+    var hGroup = htmlWebpackPlugin.options.data.balance.hGroup
+    var status = htmlWebpackPlugin.options.data.balance.status
+    var services = htmlWebpackPlugin.options.data.balance.services
 
-    section(id="balance")
+section#billing
+    nav#date-tags(grow="true", row)
+        ul(row, shrink="false")
+            each tag, key in dateTags
+                li(class={ active: key == 0 })
+                    a= tag
+
+    section#balance(align="center", row)
         hgroup
-            h5.active
-                .icon-wrapper
-                    +icon('#ic-totais')
-                span.heading-04 Totais
+            each h, key in hGroup
+                h5(class={ active: key == 0 }, align="middle", row)
+                    .icon-wrapper
+                        +icon(h.icon)
+                    span= h.title
 
-            h5
-                .icon-wrapper
-                    +icon('#ic-clientes')
-                span.heading-04 Clientes
-
-        .total
+        .total(align="center", row)
             .price-tag
-                p.heading-07 R$
-            .value
-                p.heading-05 valor total
-                p.heading-06 10.178,60
+                p R$
+            .value(align="middle", col)
+                p valor total
+                p 10.178,60
 
-    section(id="graphics")
-        .center-block
-            #services
-                .content
-                    h3.heading-05 Serviços
-                    .doughnut
+    section#graphics(align="center", row)
+        .center-block(align="around", row)
+            #services(align="middle", col)
+                .content(align="center", col)
+                    h3 Serviços
+                    .doughnut(align="center", col)
                         canvas(id="doughnut", width="100%", height="100%")
                     ul
-                        li
-                            .marker
-                                .circle
-                                h6.heading-08 Banho & Tosa
-                            .value
-                                span.heading-09 R$ 6.445,25 (50%)
-                        li
-                            .marker
-                                .circle
-                                h6.heading-08 Consultas
-                            .value
-                                span.heading-09 R$ 3.867,15 (30%)
-                        li
-                            .marker
-                                .circle
-                                h6.heading-08 Medicamentos
-                            .value
-                                span.heading-09 R$ 2.578,10 (20%)
-                        li
-                            .marker
-                                h6.heading-10 Total
-                            .value
-                                h6.heading-09 R$ 12.890,50 (100%)
-            #status
-                .content
-                    h3.heading-05 Despesas x receitas
-                    .board
+                        each service in services
+                            li(align="center", row)
+                                .marker(align="left", row)
+                                    .circle
+                                    h6= service.title
+                                .value(align="right", row)
+                                    span= service.value
+
+            #status(align="middle", col)
+                .content(align="center", col)
+                    h3 Despesas x receitas
+                    .board(align="center", row)
                         canvas(id="board", width="100%", height="100%")
                     ul
-                        li
-                            .marker
-                                .circle
-                                h6.heading-08 Receitas
-                            .value
-                                span.heading-09 R$ 12,890.50 (50%)
-
-                        li
-                            .marker
-                                .circle
-                                h6.heading-08 Despesas
-                            .value
-                                span.heading-09 R$ 2.711,90 (30%)
+                        each info in status
+                            li(align="center", row)
+                                .marker(align="left", row)
+                                    .circle
+                                    h6= info.title
+                                .value(align="right", row)
+                                    span= info.value

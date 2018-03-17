@@ -1,16 +1,12 @@
+- var menus = htmlWebpackPlugin.options.data.menus
 include ../mixins/icon-base
 include ../mixins/icon
 
-aside(id="main-aside")
-    #logo
+aside(id="main-aside", shrink="false", col)
+    #logo(align="center", col)
         +icon('#ic-logo')
-    ul
-        li.active
-            +icon('#ic-dashboard')
-            span.heading-01(class="text")
-                | Meu
-                br
-                | Faturamento
-        li 
-            +icon('#ic-cadastro')
-            span.heading-01(class="text") Cadastro
+    ul(col)
+        each menu, key in menus
+            li(class={ active: key == 0 }, align="middle", col)
+                +icon(menu.icon)
+                span.text= menu.text
