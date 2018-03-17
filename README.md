@@ -39,7 +39,7 @@ I have deployed a clone of this repo at surge.sh in the link below:
 * Pug template is used to make things faster
 * Stylus is used to scale css
 
-** PS: It was not necessary to use javascript frameworks **
+**PS: It was not necessary to use javascript frameworks**
 
 <br>
 
