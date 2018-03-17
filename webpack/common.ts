@@ -50,6 +50,10 @@ export default {
 
 		new copy([
 			{
+				from: path.join(__dirname, '../source/assets'),
+				to: path.join(__dirname, '../build/assets')
+			},
+			{
 				from: path.join(__dirname, '../source/vendors'),
 				to: path.join(__dirname, '../build/vendors')
 			},
