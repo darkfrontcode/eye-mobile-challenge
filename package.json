@@ -19,9 +19,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/copy-webpack-plugin": "^4.4.1",
     "@types/extract-text-webpack-plugin": "^3.0.0",
     "@types/html-webpack-plugin": "^2.30.1",
     "awesome-typescript-loader": "3.4.1",
+    "copy-webpack-plugin": "^4.5.1",
     "css-entry-webpack-plugin": "^1.0.0-beta.4",
     "css-loader": "^0.28.9",
     "cssnano": "^3.10.0",

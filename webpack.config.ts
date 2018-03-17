@@ -1,6 +1,7 @@
 import * as path from 'path'
 import * as webpack from 'webpack'
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
+import * as copy from 'copy-webpack-plugin'
 import { data } from './source/ts/data'
 
 export default new Object({
@@ -67,9 +68,20 @@ export default new Object({
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, './source/pug/index.pug'),
 			filename: 'index.html',
-			inject: true,
+			inject: 'body',
 			data
 		}),
+
+		new copy([
+			{
+				from: path.join(__dirname, './source/vendors'),
+				to: path.join(__dirname, './build/vendors')
+			},
+			{
+				from: path.join(__dirname, './source/fonts'),
+				to: path.join(__dirname, './build/fonts')
+			}
+		])
 
 	],
 
