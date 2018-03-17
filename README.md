@@ -3,16 +3,22 @@
 
 # Eyemobile Challenge
 
-</br>
-
 > :computer: Desktop
-<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/desktop.gif">
-</br>
-</br>
-> :iphone: Mobile
-<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/phone.gif">
 
-</br>
+<br>
+
+![desktop](https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/desktop.gif)
+
+<br>
+<br>
+
+> :iphone: Mobile
+
+<br>
+
+![mobile](https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/phone.gif)
+
+<br>
 
 ### Description
 
