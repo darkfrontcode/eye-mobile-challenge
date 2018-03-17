@@ -8,12 +8,10 @@
     "dev": "npm run webpack:dev",
     "prod": "http-server -c-1 ./build",
     "build": "npm run clean && npm run webpack:build",
-    "webpack:dev": "webpack-dev-server --content-base build/ --progress --colors",
-    "webpack:build": "webpack --config ./source/webpack/production.ts --progress --colors",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:ci": "jest --runInBand",
-    "clean": "rm -rf ./build"
+    "webpack:dev": "webpack-dev-server --content-base build/ --config ./webpack/development.ts --progress --colors",
+    "webpack:build": "webpack --config ./webpack/production.ts --progress --colors",
+    "clean": "rm -rf ./build",
+    "postinstall": "npm run clean && npm run webpack:build"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +25,7 @@
     "css-entry-webpack-plugin": "^1.0.0-beta.4",
     "css-loader": "^0.28.9",
     "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
     "http-server": "^0.11.1",
     "postcss-cssnext": "^3.0.2",
@@ -43,7 +42,8 @@
     "ts-node": "^4.1.0",
     "typescript": "^2.6.2",
     "webpack": "3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.2"
   },
   "resolutions": {
     "@types/tapable": "1.0.0"

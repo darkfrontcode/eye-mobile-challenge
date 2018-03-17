@@ -1,6 +1,6 @@
 import { Chart } from './chart/chart'
-import * as Schema from './schemas'
+import * as Schemas from './schemas'
 import '../stylus/main.styl'
 
-new Chart(document.getElementById('doughnut'), Schema.Doughnut)
-new Chart(document.getElementById('board'), Schema.Board)
+new Chart(document.getElementById('doughnut'), Schemas.Doughnut)
+new Chart(document.getElementById('board'), Schemas.Board)

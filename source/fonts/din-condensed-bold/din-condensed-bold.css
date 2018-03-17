@@ -1,0 +1,12 @@
+@font-face {
+    font-family:'DIN Condensed';
+    src: url('din-condensed-bold.eot');
+	src: url('din-condensed-bold.eot?#iefix') format('embedded-opentype'),
+		url('din-condensed-bold.woff2') format('woff2'),
+		url('din-condensed-bold.woff') format('woff'),
+		url('din-condensed-bold.svg#DIN Condensed Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    unicode-range: U+0020-00FE;
+}
