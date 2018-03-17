@@ -3,6 +3,9 @@
 
 # Eyemobile Challenge
 
+<br>
+<br>
+
 > :computer: Desktop
 
 <br>
@@ -22,7 +25,7 @@
 
 ### Description
 
-> A simple responsive Petshop
+> A simple and responsive pet store management interface
 
 I have deployed a clone of this repo at surge.sh in the link below:
 <br>
@@ -32,7 +35,11 @@ I have deployed a clone of this repo at surge.sh in the link below:
 
 > General information
 
-Webpack do all the worker with loaders, pug template is used to make things faster and stylus to scale css.
+* Webpack do all the worker with loaders
+* Pug template is used to make things faster
+* Stylus is used to scale css
+
+** PS: It was not necessary to use javascript frameworks **
 
 <br>
 
