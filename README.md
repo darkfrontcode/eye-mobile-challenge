@@ -1,14 +1,16 @@
-[![Travis](https://img.shields.io/travis/USER/REPO.svg)](https://github.com/darkfrontcode/eye-mobile-challenge)
+[![Build Status](https://travis-ci.org/darkfrontcode/eye-mobile-challenge.svg?branch=master)](https://travis-ci.org/darkfrontcode/eye-mobile-challenge)
+
 
 # Eyemobile Challenge
 
 </br>
 
-<p align="center">
-	<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/phone.gif">
-	</br>
-	<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/desktop.gif">
-</p>
+> :computer: Desktop
+<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/desktop.gif">
+</br>
+</br>
+> :iphone: Mobile
+<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/phone.gif">
 
 </br>
 
