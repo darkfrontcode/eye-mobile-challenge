@@ -2,7 +2,15 @@
 
 # Eyemobile Challenge
 
-[GIFS]
+</br>
+
+<p align="center">
+	<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/phone.gif">
+	</br>
+	<img src="https://github.com/darkfrontcode/eye-mobile-challenge/blob/master/midias/desktop.gif">
+</p>
+
+</br>
 
 ### Description
 
